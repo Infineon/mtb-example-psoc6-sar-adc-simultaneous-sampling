@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Design version="12" xmlns="http://cypress.com/xsd/cydesignfile_v3">
-    <ToolInfo version="2.2.0.2790"/>
+    <ToolInfo version="2.3.1.4663"/>
     <Devices>
         <Device mpn="CY8C6244LQI-S4D92">
             <BlockConfig>
@@ -762,16 +762,21 @@
                     <Port name="srss[0].clock[0].wco[0].wco_out[0]"/>
                 </Net>
                 <Net>
-                    <Port name="pass[0].ctb[0].oa[0].out_10x[0]"/>
-                    <Port name="pass[0].ctb[0].oa[0].vminus[0]"/>
-                </Net>
-                <Net>
                     <Port name="pass[0].ctb[0].oa[0].vplus[0]"/>
                     <Port name="pass[0].ctdac[0].ctdvout[0]"/>
                 </Net>
                 <Net>
                     <Port name="pass[0].ctbmclk[0].clock_pump_peri[0]"/>
                     <Port name="peri[0].div_8[1].clk[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[0].div_8[2].clk[0]"/>
+                    <Port name="tcpwm[0].group[0].cnt[0].clock[0]"/>
+                </Net>
+                <Net>
+                    <Port name="ioss[0].port[9].pin[2].analog[0]"/>
+                    <Port name="pass[0].ctb[0].oa[0].out_10x[0]"/>
+                    <Port name="pass[0].ctb[0].oa[0].vminus[0]"/>
                 </Net>
                 <Net>
                     <Port name="pass[0].saradc[0].sar[0].clock_sar[0]"/>
@@ -782,10 +787,6 @@
                     <Port name="pass[0].saradc[0].sar[0].tr_sar_in[0]"/>
                     <Port name="pass[0].saradc[0].sar[1].tr_sar_in[0]"/>
                     <Port name="tcpwm[0].group[0].cnt[0].tr_out0[0]"/>
-                </Net>
-                <Net>
-                    <Port name="peri[0].div_8[2].clk[0]"/>
-                    <Port name="tcpwm[0].group[0].cnt[0].clock[0]"/>
                 </Net>
                 <Mux name="Vplus" location="pass[0].saradc[0].sar[0]">
                     <Arm>
